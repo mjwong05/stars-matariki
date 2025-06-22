@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.56/---simulator","cdnUrl":"https://cdn.makecode.com","version":"1.0.0","target":"arcade","targetVersion":"2.0.56","repo":"mjwong05/stars-matariki"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.56/---simulator","cdnUrl":"https://cdn.makecode.com","version":"1.0.1","target":"arcade","targetVersion":"2.0.56","repo":"mjwong05/stars-matariki"}
 // total=1883618 new=29.97% cached=65.99% other=4.05%
 (function (ectx) {
 'use strict';
@@ -457,7 +457,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P40673(s) {
+function _main___P40765(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1120,13 +1120,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P40673.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Makey Makey Keymappings/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P40673.continuations = [  ]
+_main___P40765.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Makey Makey Keymappings/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P40765.continuations = [  ]
 
-function _main___P40673_mk(s) {
+function _main___P40765_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P40673, depth: s.depth + 1,
+        parent: s, fn: _main___P40765, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -6562,8 +6562,8 @@ switch (step) {
   case 0:
 
     s.value___27592 = undefined;
-    s.unnamed316___U1 = undefined;
-    s.unnamed317___U2 = undefined;
+    s.unnamed348___U1 = undefined;
+    s.unnamed349___U2 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
@@ -6574,15 +6574,15 @@ switch (step) {
     s.callLocIdx = 99; s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
-    s.unnamed316___U1 = (r0);
-    s.unnamed317___U2 = (0);
+    s.unnamed348___U1 = (r0);
+    s.unnamed349___U2 = (0);
   case 1:
-    s.tmp_0 = r0 = s.unnamed317___U2;
-    r0 = pxsim_Array__length(s.unnamed316___U1);
+    s.tmp_0 = r0 = s.unnamed349___U2;
+    r0 = pxsim_Array__length(s.unnamed348___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 4; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed316___U1, s.unnamed317___U2);
+    r0 = pxsim_Array__getAt(s.unnamed348___U1, s.unnamed349___U2);
     s.value___27592 = (r0);
     s.tmp_4 = sprites_readDataNumber__P24809_mk(s);
     s.tmp_4.arg0 = s.value___27592;
@@ -6645,11 +6645,11 @@ switch (step) {
     r0 = s.retval;
   case 2:
   case 3:
-    r0 = (s.unnamed317___U2 + 1);
-    s.unnamed317___U2 = (r0);
+    r0 = (s.unnamed349___U2 + 1);
+    s.unnamed349___U2 = (r0);
     { step = 1; continue; }
   case 4:
-    s.unnamed316___U1 = (undefined);
+    s.unnamed348___U1 = (undefined);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
@@ -6668,8 +6668,8 @@ function light_up__P24844_mk(s) {
   tmp_4: undefined,
   tmp_5: undefined,
   value___27592: undefined,
-  unnamed316___U1: undefined,
-  unnamed317___U2: undefined,
+  unnamed348___U1: undefined,
+  unnamed349___U2: undefined,
   arg0: undefined,
 } }
 
@@ -6963,34 +6963,34 @@ switch (step) {
   case 0:
 
     s.value___27636 = undefined;
-    s.unnamed318___U1 = undefined;
-    s.unnamed319___U2 = undefined;
+    s.unnamed350___U1 = undefined;
+    s.unnamed351___U2 = undefined;
     s.value___27636 = (undefined);
     s.tmp_0 = sprites_allOfKind__P22559_mk(s);
     s.tmp_0.arg0 = globals.star___24840;
     s.callLocIdx = 111; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
-    s.unnamed318___U1 = (r0);
-    s.unnamed319___U2 = (0);
+    s.unnamed350___U1 = (r0);
+    s.unnamed351___U2 = (0);
   case 1:
-    s.tmp_0 = r0 = s.unnamed319___U2;
-    r0 = pxsim_Array__length(s.unnamed318___U1);
+    s.tmp_0 = r0 = s.unnamed351___U2;
+    r0 = pxsim_Array__length(s.unnamed350___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 2; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed318___U1, s.unnamed319___U2);
+    r0 = pxsim_Array__getAt(s.unnamed350___U1, s.unnamed351___U2);
     s.value___27636 = (r0);
     s.tmp_2 = flash__P24846_mk(s);
     s.tmp_2.arg0 = s.value___27636;
     s.callLocIdx = 112; s.pc = 4; return s.tmp_2;
   case 4:
     r0 = s.retval;
-    r0 = (s.unnamed319___U2 + 1);
-    s.unnamed319___U2 = (r0);
+    r0 = (s.unnamed351___U2 + 1);
+    s.unnamed351___U2 = (r0);
     { step = 1; continue; }
   case 2:
-    s.unnamed318___U1 = (undefined);
+    s.unnamed350___U1 = (undefined);
     s.tmp_0 = timer_background__P24803_mk(s);
     s.tmp_0.arg0 = winAnimation_inline__P27643;
     s.callLocIdx = 118; s.pc = 5; return s.tmp_0;
@@ -7011,8 +7011,8 @@ function winAnimation__P24845_mk(s) {
   tmp_1: undefined,
   tmp_2: undefined,
   value___27636: undefined,
-  unnamed318___U1: undefined,
-  unnamed319___U2: undefined,
+  unnamed350___U1: undefined,
+  unnamed351___U2: undefined,
 } }
 
 
@@ -48768,5 +48768,5 @@ const sprites_BaseSpriteSayRenderer__C22540_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["star___24840","bg___24841","textimage___24842","images2___24855","tempSprite___24853","tempPositions___24852","positions___24854","imagesprite___24851","picture___24850","bg___24849","starcounter___24848","mySprite___24847"])
 
-return _main___P40673
+return _main___P40765
 })
