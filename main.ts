@@ -5,6 +5,10 @@ namespace SpriteKind {
 }
 function show_text (myImage: Image) {
     timer.background(function () {
+        if (showingText) {
+            pauseUntil(() => !(showingText))
+        }
+        showingText = true
         imagesprite = sprites.create(myImage, SpriteKind.textimage)
         imagesprite.setPosition(scene.screenWidth() / 2, scene.screenHeight() / 2)
         imagesprite.z = 100
@@ -16,6 +20,7 @@ function show_text (myImage: Image) {
         pause(3000)
         sprites.destroyAllSpritesOfKind(SpriteKind.textimage)
         starcounter += 1
+        showingText = false
         if (starcounter == 9) {
             winAnimation()
         }
@@ -89,7 +94,7 @@ function light_up (num: number) {
     }
 }
 controller.player1.onButtonEvent(ControllerButton.Up, ControllerButtonEvent.Pressed, function () {
-    light_up(3)
+    light_up(4)
 })
 controller.player2.onButtonEvent(ControllerButton.Down, ControllerButtonEvent.Pressed, function () {
     light_up(1)
@@ -191,22 +196,23 @@ controller.player2.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pr
     light_up(2)
 })
 controller.player1.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Pressed, function () {
-    light_up(6)
+    light_up(5)
 })
 controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     light_up(7)
 })
 controller.player1.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pressed, function () {
-    light_up(4)
+    light_up(3)
 })
 controller.player1.onButtonEvent(ControllerButton.Down, ControllerButtonEvent.Pressed, function () {
-    light_up(5)
+    light_up(6)
 })
 let mySprite: Sprite = null
 let starcounter = 0
 let bg: Sprite = null
 let picture: Image = null
 let imagesprite: Sprite = null
+let showingText = false
 let tempPositions: string[] = []
 let tempSprite: Sprite = null
 scene.setBackgroundImage(img`
